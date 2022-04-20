@@ -21,7 +21,7 @@
 #define MAX_EVENTS  5000
 #define NO_OWNER      -1
 
-FILE *logFile;
+extern FILE *logFile;
 
 typedef struct{
   int  x,y,ships,ownerIdx,prod;
