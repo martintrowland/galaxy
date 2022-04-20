@@ -5,6 +5,8 @@
 #include <unistd.h>
 #include <math.h>
 
+FILE *logFile;
+
 //
 // Galaxy Data Structures
 //
