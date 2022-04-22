@@ -5,8 +5,6 @@
 #include <unistd.h>
 #include <math.h>
 
-FILE *logFile;
-
 //
 // Galaxy Data Structures
 //
@@ -18,6 +16,7 @@ FILE *logFile;
 #define MAX_EVENTS 5000
 #define NO_OWNER -1
 #define NAME Player1
+
 typedef struct{
   int  x,y,ships,ownerIdx,prod;
   char name;
@@ -77,6 +76,7 @@ void writeLine(char *buf){
   fflush(logFile);
   write(1,buf,strlen(buf));
 }
+
 //
 // Setup
 //
